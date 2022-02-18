@@ -247,6 +247,11 @@ img {
   right: 0;
 }
 
+/* Change header background */
+.scroll-header {
+  box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
+}
+
 /* ===== HOME ===== */
 .home {
   min-height: 100vh;
