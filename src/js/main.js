@@ -47,3 +47,26 @@ function scrollHeader() {
 	}
 }
 window.addEventListener('scroll', scrollHeader);
+
+/* ===== FAQs ACCORDION ===== */
+const accrodionItems = document.querySelectorAll('.faqs__item');
+
+accrodionItems.forEach((item) => {
+	const accrodionHeader = item.querySelector('.faqs__header');
+
+	accrodionHeader.addEventListener('click', () => {
+		toggleItem(item)
+	})
+})
+
+const toggleItem = (item) => {
+	const accrodionContent = item.querySelector('.faqs__content');
+
+	if (item.classList.contains('accordion-open')) {
+		accrodionContent.removeAttribute('style')
+		item.classList.remove('accordion-open')
+	} else {
+		accrodionContent.style.height = accrodionContent.scrollHeight + 'px'
+		item.classList.add('accordion-open')
+	}
+}
