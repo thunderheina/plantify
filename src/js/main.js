@@ -55,7 +55,13 @@ accrodionItems.forEach((item) => {
 	const accrodionHeader = item.querySelector('.faqs__header');
 
 	accrodionHeader.addEventListener('click', () => {
+		const openItem = document.querySelector('.accordion-open')
+
 		toggleItem(item)
+
+		if (openItem && openItem !== item) {
+			toggleItem(openItem)
+		}
 	})
 })
 
