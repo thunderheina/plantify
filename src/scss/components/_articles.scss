@@ -1,0 +1,38 @@
+/* ===== ARTICLES ===== */
+.articles {
+	background-color: #f2f2f0;
+
+	&__container {
+		padding: 3rem 0;
+		column-gap: 3rem;
+		row-gap: 3rem;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		row-gap: 3rem;
+		background-color: #fbfbfb;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+		&:hover {
+			transform: translateY(-0.25rem);
+			-webkit-transform: translateY(-0.25rem);
+			-moz-transform: translateY(-0.25rem);
+			-ms-transform: translateY(-0.25rem);
+			-o-transform: translateY(-0.25rem);
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 55%;
+		object-fit: cover;
+	}
+	&__description {
+		text-align: center;
+		font-size: var(--small-font-size);
+	}
+}
