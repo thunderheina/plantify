@@ -34,6 +34,9 @@
 						<a href="#service" class="nav__link">Service</a>
 					</li>
 					<li class="nav__item">
+						<a href="#articles" class="nav__link">Articles</a>
+					</li>
+					<li class="nav__item">
 						<a href="#products" class="nav__link">Products</a>
 					</li>
 					<li class="nav__item">
@@ -125,14 +128,37 @@
 						</p>
 					</div>
 
-					<a href="#" class="button--link button--flex">
+					<a href="#products" class="button--link button--flex">
 						Shop Now <i class="ri-arrow-down-line button__icon"></i>
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<!-- ===== STEPS ===== -->
+		<!-- ===== ARTICLES ===== -->
+		<section class="articles section" id="articles">
+			<h2 class="section__title-center articles__title">Latest articles</h2>
+
+			<div class="articles__container grid container">
+				<div class="articles__card">
+					<img src="src/img/article1.jpg" alt="banch of leaves" class="articles__img">
+					<p class="articles__description">How to planify your everyday life</p>
+				</div>
+
+				<article class="articles__card">
+					<img src="src/img/article2.jpg" alt="a woman in the greenhouse" class="articles__img">
+					<p class="articles__description">How to build a greenhouse</p>
+				</article>
+
+				<article class="articles__card">
+					<img src="src/img/article3.jpg" alt="banch of leaves" class="articles__img">
+					<p class="articles__description">How to use choose a plant</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- 
+			===== STEPS ===== 
 		<section class="steps section container">
 			<div class="steps__bg">
 				<h2 class="section__title-center steps__title">
@@ -162,6 +188,7 @@
 				</div>
 			</div>
 		</section>
+		-->
 
 		<!-- ===== PRODUCTS ===== -->
 		<section class="product section container" id="products">
@@ -258,6 +285,10 @@
 				Common questions
 			</h2>
 
+			<div class="faqs__circle faqs__circle-small"></div>
+			<div class="faqs__circle faqs__circle-medium"></div>
+			<div class="faqs__circle faqs__circle-big"></div>
+
 			<div class="faqs__container container grid">
 				<div class="faqs__group">
 					<div class="faqs__item">
@@ -330,6 +361,57 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!-- ===== CONTACT ===== -->
+		<section class="contact section container" id="contact">
+			<div class="contact__container grid">
+				<div class="contact__box">
+					<h2 class="section__title">Contact us</h2>
+
+					<div class="contact__data">
+						<div class="contact__information">
+							<h3 class="contact__subtitle">Call us for any support</h3>
+							<span class="contact__description">
+								<i class="ri-phone-line contact__icon"></i>
+								+909 555 135
+							</span>
+						</div>
+
+						<div class="contact__information">
+							<h3 class="contact__subtitle">Write us</h3>
+							<span class="contact__description">
+								<i class="ri-mail-line contact__icon"></i>
+								plantify@email.com
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<form action="" class="contact__form">
+					<div class="contact__inputs">
+						<div class="contact__content">
+							<input type="email" placeholder=" " class="contact__input" id="email">
+							<label for="email" class="contact__label">Email</label>
+						</div>
+
+						<div class="contact__content">
+							<input type="text" placeholder=" " class="contact__input" id="subject">
+							<label for="subject" class="contact__label">Subject</label>
+						</div>
+
+						<div class="contact__content contact__area">
+							<textarea name="message" placeholder=" " class="contact__input" id="message"></textarea>
+							<label for="message" class="contact__label">Message</label>
+						</div>
+					</div>
+
+					<button class="button button--flex">
+						Send Message
+						<i class="ri-mail-send-line button__icon"></i>
+					</button>
+				</form>
 			</div>
 		</section>
 
