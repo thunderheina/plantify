@@ -134,3 +134,15 @@ themeButton.addEventListener('click', () => {
 	localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/* ===== SCROLL ANIMATION ===== */
+const sr = ScrollReveal({
+	origin: 'top',
+	distance: '60px',
+	duration: 2500,
+	delay: 400,
+	// reset: true
+})
+
+sr.reveal(`.service__img, .contact__box`, { origin: 'left' })
+sr.reveal(`.service__data, .contact__form`, { origin: 'right' })
+sr.reveal(`.articles__card, .product__card, .faqs__group, .footer`, { interval: 100 })
