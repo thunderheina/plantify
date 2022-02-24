@@ -145,4 +145,4 @@ const sr = ScrollReveal({
 
 sr.reveal(`.service__img, .contact__box`, { origin: 'left' })
 sr.reveal(`.service__data, .contact__form`, { origin: 'right' })
-sr.reveal(`.articles__card, .product__card, .faqs__group, .footer`, { interval: 100 })
+sr.reveal(`.articles__card, .product__card, .faqs__group`, { interval: 100 })
