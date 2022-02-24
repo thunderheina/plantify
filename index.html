@@ -52,8 +52,13 @@
 				</div>
 			</div>
 
-			<div class="nav__toggle" id="nav-toggle">
-				<i class="ri-menu-line"></i>
+			<div class="nav__btns">
+				<!-- Theme change -->
+				<i class="ri-moon-line change-theme" id="theme-button"></i>
+
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-menu-line"></i>
+				</div>
 			</div>
 		</nav>
 	</header>
@@ -72,7 +77,7 @@
 							class="ri-arrow-right-down-line button__icon"></i></a>
 				</div>
 
-				<div class="home__social grid">
+				<div class="home__social">
 					<span class="home__social-follow">Follow Us</span>
 
 					<div class="home__social-links">
@@ -107,24 +112,17 @@
 
 					<div class="service__details">
 						<p class="service__details-description">
-							<i class="ri-checkbox-fill service__details-icon">
-								We always deliver on time.
-							</i>
+							<i class="ri-checkbox-fill service__details-icon"></i> We always deliver on time.
 						</p>
 						<p class="service__details-description">
-							<i class="ri-checkbox-fill service__details-icon">
-								We help you care for your plants.
-							</i>
+							<i class="ri-checkbox-fill service__details-icon"></i>We help you care for your plants.
 						</p>
 						<p class="service__details-description">
-							<i class="ri-checkbox-fill service__details-icon">
-								We always come over for a check-up after sale.
-							</i>
+							<i class="ri-checkbox-fill service__details-icon"></i>We always come over for a check-up after
+							sale.
 						</p>
 						<p class="service__details-description">
-							<i class="ri-checkbox-fill service__details-icon">
-								14-day Money back guarantee.
-							</i>
+							<i class="ri-checkbox-fill service__details-icon"></i>14-day Money back guarantee.
 						</p>
 					</div>
 
@@ -281,13 +279,16 @@
 
 		<!-- ===== FAQs ===== -->
 		<section class="faqs section" id="faqs">
-			<h2 class="section__title-center faqs__title container">
-				Common questions
-			</h2>
 
-			<div class="faqs__circle faqs__circle-small"></div>
-			<div class="faqs__circle faqs__circle-medium"></div>
-			<div class="faqs__circle faqs__circle-big"></div>
+			<div class="faqs__header container">
+				<h2 class="section__title-center faqs__title container">
+					Common questions
+				</h2>
+
+				<div class="faqs__circle faqs__circle-small"></div>
+				<div class="faqs__circle faqs__circle-medium"></div>
+				<div class="faqs__circle faqs__circle-big"></div>
+			</div>
 
 			<div class="faqs__container container grid">
 				<div class="faqs__group">
@@ -360,6 +361,20 @@
 							</p>
 						</div>
 					</div>
+
+					<div class="faqs__item">
+						<header class="faqs__header">
+							<i class="ri-arrow-right-s-line faqs__icon"></i>
+							<h3 class="faqs__item-title">What causes leaves to become pale?</h3>
+						</header>
+
+						<div class="faqs__content">
+							<p class="faqs__description">
+								Plants are easy way to add color and energy to your space. But which plant is for you. Choosing
+								the right plant.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -418,7 +433,7 @@
 	</main>
 
 	<!-- ===== FOOTER ===== -->
-	<footer class="footer section">
+	<footer class="footer">
 		<div class="footer__container container grid">
 			<div class="footer__content">
 				<a href="#" class="footer__logo">
@@ -486,8 +501,8 @@
 		<i class="ri-arrow-up-fill scrollup__icon"></i>
 	</a>
 
-
 	<!-- ===== SCROLL ===== -->
+	<script src="src/js/scrollreveal.min.js"></script>
 
 	<!-- ===== MAIN JS ===== -->
 	<script src="src/js/main.js"></script>
