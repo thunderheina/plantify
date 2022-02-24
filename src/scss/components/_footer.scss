@@ -1,5 +1,8 @@
 /* ===== FOOTER ===== */
 .footer {
+	box-shadow: 2px 0 5px hsla(var(--hue), 24%, 15%, 0.3);
+	padding: 3rem 0 2rem;
+
 	&__container {
 		row-gap: 3rem;
 	}
