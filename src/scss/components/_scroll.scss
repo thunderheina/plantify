@@ -1,0 +1,35 @@
+/* ===== SCROLL UP ===== */
+.scrollup {
+	position: fixed;
+	background-color: var(--first-color);
+	right: 1rem;
+	bottom: -30%;
+	display: inline-flex;
+	padding: 0.5rem;
+	z-index: var(--z-tooltip);
+	opacity: 0.8;
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+
+	&:hover {
+		background-color: var(--first-color-alt);
+		opacity: 1;
+	}
+	&__icon {
+		font-size: 1rem;
+		color: #fff;
+	}
+}
+
+/* Show Scroll Up */
+.show-scroll {
+	bottom: 3rem;
+}
